@@ -186,6 +186,7 @@ def check(X, Y, B, n, m):
 
     Gp = kriteriy_cochrana(Y, y_aver, n, m)
     print(f'Gp = {Gp}')
+    """ Перевірюємо критерій кохрена, якщо не адекватно, m+1 і починаємо спочатку"""
     if Gp < G_kr:
         print(f'З ймовірністю {1-q} дисперсії однорідні.')
     else:
